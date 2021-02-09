@@ -237,13 +237,13 @@ export function InfoSidebar(props) {
           <label>设置</label>
         </a>
         &nbsp;&nbsp;
-        <a href={process.env.REACT_APP_RULES_URL} target="_blank">
+        {/* <a href={process.env.REACT_APP_RULES_URL} target="_blank">
           <span className="icon icon-textfile" />
           <label>树洞规范</label>
-        </a>
+        </a> */}
         &nbsp;&nbsp;
         <a
-          href="https://github.com/thuhole/thuhole-go-backend/issues"
+          href="https://github.com/Yonghui-Lee/webhole/issues"
           target="_blank"
         >
           <span className="icon icon-github" />
@@ -253,16 +253,16 @@ export function InfoSidebar(props) {
       <div className="box help-desc-box">
         <p>
           <a onClick={DoUpdate}>强制检查更新</a>
-          （当前版本：【{process.env.REACT_APP_BUILD_INFO || '---'}{' '}
-          {process.env.NODE_ENV}】 会自动在后台检查更新并在下次访问时更新）
+          {/* （当前版本：【{process.env.REACT_APP_BUILD_INFO || '---'}{' '}
+          {process.env.NODE_ENV}】 会自动在后台检查更新并在下次访问时更新） */}
         </p>
       </div>
-      <div className="box help-desc-box">
+      {/* <div className="box help-desc-box">
         <p>联系我们：{process.env.REACT_APP_CONTACT_EMAIL}</p>
-      </div>
+      </div> */}
       <div className="box help-desc-box">
         <p>
-          T大树洞 网页版 by @thuhole， 基于&nbsp;
+          hust树洞 网页版， 基于&nbsp;
           <a
             href="https://www.gnu.org/licenses/gpl-3.0.zh-cn.html"
             target="_blank"
@@ -270,19 +270,26 @@ export function InfoSidebar(props) {
             GPLv3
           </a>
           &nbsp;协议在{' '}
-          <a href="https://github.com/thuhole/webhole" target="_blank">
+          <a href="https://github.com/Yonghui-Lee/webhole" target="_blank">
             GitHub
           </a>{' '}
           开源
         </p>
         <p>
-          T大树洞 网页版的诞生离不开&nbsp;
+          hust树洞 网页版的诞生离不开&nbsp;
+          <a
+            href="https://github.com/thuhole/webhole"
+            target="_blank"
+            rel="noopener"
+          >
+            T大树洞网页版
+          </a>、
           <a
             href="https://github.com/pkuhelper-web/webhole"
             target="_blank"
             rel="noopener"
           >
-            P大树洞网页版 by @xmcp
+            P大树洞网页版
           </a>
           、
           <a href="https://reactjs.org/" target="_blank" rel="noopener">
@@ -415,7 +422,7 @@ export class LoginForm extends Component {
                   </p>
                   {/*<p>*/}
                   {/*根据计算中心要求，访问授权三个月内有效，过期需重新登录。*/}
-                  {/*T大树洞将会单向加密(i.e. 哈希散列)您的邮箱后再存入数据库，因此您的发帖具有较强的匿名性。具体可见我们的<a href="https://github.com/thuhole/thuhole-go-backend/blob/76f56e6b75257b59e552b6bdba77e114151fcad1/src/db.go#L184">后端开源代码</a>。*/}
+                  {/*hust树洞将会单向加密(i.e. 哈希散列)您的邮箱后再存入数据库，因此您的发帖具有较强的匿名性。具体可见我们的<a href="https://github.com/thuhole/thuhole-go-backend/blob/76f56e6b75257b59e552b6bdba77e114151fcad1/src/db.go#L184">后端开源代码</a>。*/}
                   {/*</p>*/}
                   <p>
                     <a
@@ -454,7 +461,7 @@ export class LoginForm extends Component {
                       <p>
                         <small>
                           {process.env.REACT_APP_TITLE}
-                          面向T大学生，通过T大邮箱验证您的身份并提供服务。
+                          面向华科学生，通过华科邮箱验证您的身份并提供服务。
                         </small>
                       </p>
                     </div>

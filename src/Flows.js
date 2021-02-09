@@ -1664,10 +1664,13 @@ export class Flow extends PureComponent {
                 &nbsp;Loading...
               </span>
             ) : (
-              '© thuhole'
+              '© husthole | 鄂ICP备2021002555'
             )
           }
         />
+        {/* <a href="http://beian.miit.gov.cn" target="_blank">
+          
+        </a> */}
       </div>
     );
   }
