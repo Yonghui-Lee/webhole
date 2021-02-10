@@ -237,10 +237,10 @@ export function InfoSidebar(props) {
           <label>设置</label>
         </a>
         &nbsp;&nbsp;
-        {/* <a href={process.env.REACT_APP_RULES_URL} target="_blank">
+        <a href={process.env.REACT_APP_RULES_URL} target="_blank">
           <span className="icon icon-textfile" />
           <label>树洞规范</label>
-        </a> */}
+        </a>
         &nbsp;&nbsp;
         <a
           href="https://github.com/Yonghui-Lee/webhole/issues"

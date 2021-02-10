@@ -1,32 +1,116 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="%PUBLIC_URL%/static/favicon/512.png">
-    <meta name="format-detection" content="telephone=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/static/favicon/512.png" />
+    <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="%PUBLIC_URL%/static/fonts_8/icomoon.css" />
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/static/favicon/512.png">
-    <link rel="manifest" href="./static/manifest.json">
-    <meta name="theme-color" content="#333333"/>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/static/favicon/512.png" />
+    <link rel="manifest" href="./static/manifest.json" />
+    <meta name="theme-color" content="#333333" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/static/favicon/180.png" />
-    <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/static/favicon/512.png" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="树洞">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/static/splash/750x1334.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)"/>
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/splash/1242x2208.png" media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)"/>
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/splash/1668x2388.png" media="(device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/>
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/static/splash/2388x1668.png" media="(device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/static/favicon/180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="%PUBLIC_URL%/static/favicon/512.png"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="树洞" />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/static/splash/750x1334.png"
+      media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/splash/1242x2208.png"
+      media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/splash/1668x2388.png"
+      media="(device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/static/splash/2388x1668.png"
+      media="(device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
 
     <title>%REACT_APP_TITLE%</title>
-</head>
-<body>
+    <style>
+      footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
     <div id="root"></div>
     <script src="stats.js" defer></script>
-</body>
+    <footer>
+      <div style="width: 600px; margin: 0 auto; padding: 20px 0">
+        <a
+          target="_blank"
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102004354"
+          style="
+            display: inline-block;
+            text-decoration: none;
+            height: 20px;
+            line-height: 20px;
+          "
+        >
+          <img src="备案图标.png" style="float: left" />
+          <p
+            style="
+              float: left;
+              height: 20px;
+              line-height: 20px;
+              margin: 0px 10px 0px 10px;
+              color: #939393;
+            "
+          >
+            鄂公网安备 42011102004354号   
+          </p>
+        </a>
+        <a
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+          style="
+            display: inline-block;
+            text-decoration: none;
+            height: 20px;
+            line-height: 20px;
+          "
+        >
+          <p
+            style="
+              float: left;
+              height: 20px;
+              line-height: 20px;
+              margin: 0px 10px 0px 10px;
+              color: #939393;
+            "
+          >
+            鄂ICP备 2021002555号
+          </p>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

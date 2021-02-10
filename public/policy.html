@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
+    <script type ="text/javascript">
+		function hide(obj){
+			obj.parentNode.nextSibling.style.display="brick";//取父节点的兄弟节点就OK了
+		}
+	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&quot;T大树洞&quot;社区规范</title>
+    <title>&quot;hust树洞&quot;社区规范</title>
     <style>
+     
         .container {
             max-width: 800px;
             margin: auto;
@@ -12,7 +18,7 @@
 
         #nice-rich-text-box {
             padding: 20px;
-        }
+        }      
 
     </style>
 
@@ -693,28 +699,31 @@
      */
     #nice .inline-equation svg {
     }</style>
+
+    
 </head>
 <body>
 
 <div class="container">
     <div id="nice-rich-text-box" class="nice-wx-box">
         <section id="nice" data-tool="mdnice编辑器" data-website="https://www.mdnice.com"><h1><span
-                class="prefix"></span><span class="content">T大树洞社区规范</span><span class="suffix"></span></h1>
-            <p>欢迎来到T大树洞。为了所有参与者都能够愉快的使用这个平台，我们需要花一些时间设定一些规则。</p>
+                class="prefix"></span><span class="content">hust树洞社区规范（在T大树洞基础上的修改版本）</span><span class="suffix"></span></h1>
+            <p>欢迎来到hust树洞。为了所有参与者都能够愉快的使用这个平台，我们需要花一些时间设定一些规则。
+                鉴于尚不知树洞在校内会有何反响，本文所述社区规范将首先采用T大树洞规范的主要内容，仅仅修改了一些细节。</p>
             <p>以下是规范的制定准则。请注意它们不构成规范的解释，不能代替规范正文。</p>
-            <h4><span class="prefix"></span><span class="content">你的义务</span><span class="suffix"></span></h4>
+            <h4 class="duty"><span class="prefix"></span><span class="content">你的义务</span><span class="suffix"></span></h4>
             <ul>
                 <li>
                     <section>请做一个友善的人，尊重其他人的观点，即使ta与你相异;</section>
                 </li>
                 <li>
-                    <section>请不要发布令人感到不适或者违反法律法规的内容，比如(但不限于)侮辱他人、侵犯他人隐私、色情的内容。</section>
+                    <section>请不要发布令人感到不适或者违反法律法规的内容。</section>
                 </li>
                 <li>
                     <section>在参与讨论时，请与我们共同维护社区的 "存在"。比如，对于不宜讨论、组织的内容与活动，讨论时加以适当的节制。</section>
                 </li>
             </ul>
-            <h4><span class="prefix"></span><span class="content">你的权利</span><span class="suffix"></span></h4>
+            <h4 class='right'><span class="prefix"></span><span class="content">你的权利</span><span class="suffix"></span></h4>
             <ul>
                 <li>
                     <section>你可以享受社区的所有功能，并参与它的维护; 你可以举报其他人的发言，如果你认为它违反了规范。</section>
@@ -725,10 +734,12 @@
             </ul>
             <hr>
             <h2><span class="prefix"></span><span class="content">规范正文</span><span class="suffix"></span></h2>
-            <p>生效日期：2020年12月11日</p>
-            <h4><span class="prefix"></span><span class="content">一、管理主体和适用法律</span><span class="suffix"></span></h4>
-            <p>T大树洞团队成立发展运营组，承担树洞管理具体职责，依据本规范对树洞进行管理。</p>
-            <p>本社区面向用户为与清华大学相关的个人，例如学生、校友等。本社区适用法律为《中华人民共和国宪法》及地区法律法规。</p>
+            <p>改写日期：2021年2月9日</p>
+            <h4 type='checkbox' checked="checked"><span class="prefix"></span><span class="content">一、管理主体和适用法律</span><span class="suffix"></span></h4>
+            <div>
+                <p>hust树洞团队成立发展运营组，承担树洞管理具体职责，依据本规范对树洞进行管理。</p>
+                <p>本社区面向用户为与华中科技大学相关的个人，例如学生、校友等。本社区适用法律为《中华人民共和国宪法》及地区法律法规。</p>
+            </div>    
             <h4><span class="prefix"></span><span class="content">二、定义</span><span class="suffix"></span></h4>
             <ol>
                 <li>
@@ -745,13 +756,15 @@
                     <section>"邮箱哈希值" 指通过单向加密的密码学手段对用户邮箱地址加密后的邮箱密文;</section>
                 </li>
             </ol>
-            <h4><span class="prefix"></span><span class="content">三、内容版权与责任</span><span class="suffix"></span></h4>
+            <a href="#" onclick ="hide(this)"<h4><span class="prefix"></span><span class="content">三、内容版权与责任</span><span class="suffix"></span></h4></a>
+            <div style="display: none;">
             <p>用户使用社区并上传任何信息时，即确认其享有所发布内容的版权 (比如原创)，或者使用内容属于教育、科学研究、评论与报道等 "合理使用" 的范畴。如果用户享有内容的版权，即永久授权社区对其的发布与传播。</p>
             <p>用户对在社区上发表的内容、言论承担一切法律责任。</p>
+            </div>
             <h4><span class="prefix"></span><span class="content">四、账户责任</span><span class="suffix"></span></h4>
             <ol>
                 <li>
-                    <section>社区的账户仅供本人使用。账户的创立需要经过(一)所规定的符合条件个人的验证。不满足使用条件的用户账户将被停用。</section>
+                    <section>社区的账户仅供本人使用。账户的创立需要经过验证。不满足使用条件的用户账户将被停用。</section>
                 </li>
                 <li>
                     <section>社区一旦发现账户被多人使用，即有权无条件立即停用账号。</section>
@@ -760,7 +773,8 @@
                     <section>社区有权以任何理由拒绝向用户提供服务。</section>
                 </li>
             </ol>
-            <h4><span class="prefix"></span><span class="content">五、禁止的内容</span><span class="suffix"></span></h4>
+            <h4><span class="prefix"></span><span class="content" onclick="copyText()">五、禁止的内容</span><span class="suffix"></span></h4>
+            <div "field2">
             <p>以下内容不得在社区上传、传播，否则将被处理隐藏或删除，发布者将根据第(六)条处罚:</p>
             <ol>
                 <li>
@@ -796,7 +810,7 @@
                     <section><strong>侵犯他人隐私的内容</strong>，例如: 未经许可暴露他人具体姓名、个人信息、联系方式;
                         <ul>
                             <li>
-                                <section>解释3.1 - 拼音缩写不在此限，除非由当事人提出异议;</section>
+                                <section>解释3.1 - 拼音缩写不在此限（但仍请三思而行），除非由当事人提出异议;</section>
                             </li>
                             <li>
                                 <section>解释3.2 - 对公众人物的公开信息，如新闻报道、公众号文章等的讨论，不在此限，除非由当事人提出异议;</section>
@@ -904,6 +918,7 @@
                     <section>经本人要求删除涉及个人隐私、过多细节或对本人生活造成不良影响的发帖。</section>
                 </li>
             </ol>
+            </div>
             <h4><span class="prefix"></span><span class="content">六、删帖处罚</span><span class="suffix"></span></h4>
             <ol>
                 <li>
@@ -925,7 +940,7 @@
             <h4><span class="prefix"></span><span class="content">七、举报与申诉</span><span class="suffix"></span></h4>
             <ol>
                 <li>
-                    <section>用户在使用过程中如发现违反本规范中所述的行为，可通过T大树洞内的举报按钮或通过邮箱联系发展运营组进行举报。</section>
+                    <section>用户在使用过程中如发现违反本规范中所述的行为，可通过hust树洞内的举报按钮或通过邮箱联系发展运营组进行举报。</section>
                 </li>
                 <li>
                     <section>用户账户受到处理后，将自动收到系统发来的违规情况说明。用户被封禁后在封禁期满前有权通过邮箱联系发展运营组书面提出申诉。</section>
@@ -1000,11 +1015,11 @@
                 <li>
                     <section>用户禁止未经允许，对社区平台进行漏洞扫描、流量攻击、压力测试等可能会对社区平台造成破坏、数据损失、隐私泄露的操作。</section>
                 </li>
-                <li>
-                    <section>不得使用T大树洞网页版、T大树洞app版和THUInfo( <a href="https://github.com/THUInfo/THUInfo">https://github.com/THUInfo/THUInfo</a>
-                        )以外的客户端、脚本等访问方式，未经T大树洞团队明确许可，访问T大树洞的相关服务、下载T大树洞服务提供的相关内容；违者造成恶劣影响的，T大树洞团队有权调查、封禁传播人账户，并追究法律责任。
+                <!-- <li>
+                    <section>不得使用hust树洞网页版、hust树洞app版和THUInfo( <a href="https://github.com/THUInfo/THUInfo">https://github.com/THUInfo/THUInfo</a>
+                        )以外的客户端、脚本等访问方式，未经hust树洞团队明确许可，访问hust树洞的相关服务、下载hust树洞服务提供的相关内容；违者造成恶劣影响的，hust树洞团队有权调查、封禁传播人账户，并追究法律责任。
                     </section>
-                </li>
+                </li> -->
             </ol>
             <h4><span class="prefix"></span><span class="content">十一、个人隐私</span><span class="suffix"></span></h4>
             <ol>
@@ -1025,11 +1040,12 @@
                     </section>
                 </li>
                 <li>
-                    <section>如果没有执法部门或其他政府机构的特殊保密要求，我们将公开所有向T大树洞发展运营组请求查询用户注册邮箱明文的请求。</section>
+                    <section>如果没有执法部门或其他政府机构的特殊保密要求，我们将公开所有向hust树洞发展运营组请求查询用户注册邮箱明文的请求。</section>
                 </li>
             </ol>
             <h4><span class="prefix"></span><span class="content">十二、用户邮箱查询</span><span class="suffix"></span></h4>
-            <p>T大树洞发展运营组未经用户允许，不主动尝试解密用户邮箱哈希值获取用户邮箱明文，但以下特定情形除外：</p>
+            <div>
+            <p>hust树洞发展运营组未经用户允许，不主动尝试解密用户邮箱哈希值获取用户邮箱明文，但以下特定情形除外：</p>
             <ol>
                 <li>
                     <section>用户转让、出租、出售个人账户或者个人账户导致的个人信息泄露；</section>
@@ -1041,7 +1057,8 @@
                     <section>根据相关法律法规或政策的要求。</section>
                 </li>
             </ol>
-            <p>T大树洞发展运营组尝试解密用户邮箱哈希值需要经过半数以上管理员同意。</p>
+            <p>hust树洞发展运营组尝试解密用户邮箱哈希值需要经过半数以上管理员同意。</p>
+            </div>
             <h4><span class="prefix"></span><span class="content">十三、法律冲突</span><span class="suffix"></span></h4>
             <p>本规范不构成对相关法律法规的任何有效修改，如有冲突，应以相关法律法规与制度文件为准。</p>
             <h4><span class="prefix"></span><span class="content">十四、修订</span><span class="suffix"></span></h4>
